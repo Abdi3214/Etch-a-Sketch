@@ -48,7 +48,7 @@ clearButton.addEventListener("click", () => {
 
 resizeBtn.addEventListener("click", () => {
   const newSize = Number(prompt("Enter Grid Size 1 to 100"));
-  if (newSize < 1 || newSize > 100 || isNaN(newSize)) {
+  if (newSize < 1 || newSize >= 100 || isNaN(newSize)) {
     alert("Invalid size! Please enter a number between 1 and 100.");
     return;
   }
